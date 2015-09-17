@@ -381,10 +381,33 @@ respectively.
         },
 
         /**
+<<<<<<< 2c6093b7b9d24338a0c599a947dc1feb574e5233
          * Compute the label for the dropdown given a selected item.
          *
          * @param {Element} selectedItem A selected Element item, with an
          * optional `label` property.
+=======
+         * The orientation against which to align the menu dropdown
+         * horizontally relative to the dropdown trigger.
+         */
+        horizontalAlign: {
+          type: String,
+          value: 'right',
+        },
+
+        /**
+         * The orientation against which to align the menu dropdown
+         * vertically relative to the dropdown trigger.
+         */
+        verticalAlign: {
+          type: String,
+          value: 'top',
+        },
+
+        /**
+         * Set to true to always float the label. Bind this to the
+         * `<paper-input-container>`'s `alwaysFloatLabel` property.
+>>>>>>> added verticalAlign and horizontalAlign properties
          */
         _selectedItemChanged: function(selectedItem) {
           var value = '';
